@@ -1,0 +1,153 @@
+direction,name,unit,default,min,max,meaning,change_frequency,source,provenance_flag
+INPUT,plant.plant_id,,INDUSTRY-X,,,,,,
+INPUT,plant.station_id,,RH-OB-1,,,,,,
+INPUT,plant.upstream_shop,,BOF-2,,,,,,
+INPUT,plant.route,,BOF-RHOB-CC,,,,,,
+INPUT,plant.caster_id,,CC-2,,,,,,
+INPUT,plant.timezone,,Asia/Kolkata,,,,,,
+INPUT,plant.variant,,RH_OB,,,,,,
+INPUT,plant.chemical_heating_enabled,-,True,,,Al + O2 chemical heating permitted & validated at site,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.atmospheric_pressure_Pa,Pa_abs,101325.0,85000,106000,Local barometric pressure,per shift,barometer,MEASURED
+INPUT,plant.config_version,,demo-1.0.0,,,,,,
+INPUT,plant.geometry.capacity_t,t,300.0,60,420,Nominal ladle liquid-steel capacity,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.ladle_inner_diameter_m,m,3.85,2.0,5.0,Mean inner diameter of ladle working lining,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.ladle_freeboard_m,m,0.45,0.1,1.5,Distance steel level to ladle rim,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.ladle_wall_layers,,(structured default),,,,,,
+INPUT,plant.geometry.snorkel_inner_diameter_m,m,0.75,0.3,1.0,Inner diameter of up-leg and down-leg snorkels,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.snorkel_length_m,m,1.45,0.8,2.5,Snorkel length from vessel bottom to tip,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.snorkel_wall_thickness_m,m,0.25,0.1,0.45,Snorkel refractory + castable wall,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.immersion_depth_m,m,0.55,0.2,0.9,Snorkel submerged depth below ladle steel level,per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.lift_nozzle_count,-,12,2,24,Number of argon lift nozzles in the up-leg,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.lift_nozzle_height_above_tip_m,m,0.2,0.05,0.6,Height of lift-gas nozzle row above snorkel tip,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.vessel_inner_diameter_m,m,3.0,1.6,3.8,Lower vacuum vessel inner diameter,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.vessel_lower_height_m,m,2.6,1.5,4.0,Lower vessel height (steel-wetted region),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.vessel_height_m,m,10.5,6.0,14.0,Total internal height of vacuum vessel,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.duct_and_cooler_volume_m3,m3,85.0,10,300,"Evacuated volume of off-gas duct, cooler and dust catcher",per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.vessel_wall_layers,,(structured default),,,,,,
+INPUT,plant.geometry.upper_vessel_wall_layers,,(structured default),,,,,,
+INPUT,plant.geometry.oxygen_tuyere_count,-,2,0,8,Submerged RH-OB oxygen tuyeres (0 = none installed),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.geometry.oxygen_tuyere_height_above_bottom_m,m,0.1,0.05,0.6,Tuyere axis above vessel bottom,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.pump_curve,"Pa_abs, kg/h",(structured default),,,"[[suction pressure Pa abs, dry-air-equivalent capacity kg/h], ...] ascending P",,ILLUSTRATIVE; replace by OEM ejector curve,
+INPUT,plant.vacuum.pump_health,-,1.0,0.0,1.2,Capacity multiplier (1 = as rated; <1 = degraded steam/condensers),per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.air_leak_kg_h,kg/h,15.0,0.0,500.0,Air in-leakage into vessel/duct (choked; ~independent of P),per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.suction_temperature_K,K,320.0,280,450,Gas temperature at pump suction (after cooler),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.duct_gas_temperature_K,K,450.0,300,900,Mean gas temperature in duct/cooler volume,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.vent_gas,-,N2,,,Gas used for vacuum break (affects N pick-up),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.vent_rate_mol_s,mol/s,400.0,10,3000,Vent valve flow at vacuum break,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.vacuum.pressure_controller_band_frac,-,0.06,0.01,0.5,Pressure-control throttle band as fraction of set-point,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.circulation_model,-,kuwabara,,,Circulation correlation,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.circulation_multiplier,-,1.0,0.3,2.0,Calibration factor on circulation rate,per campaign,tracer/mixing test,ESTIMATED
+INPUT,plant.kinetics.circulation_multiplier_sd,-,0.2,0.0,1.0,1-sigma relative uncertainty of circulation (uncalibrated),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.downleg_velocity_max_m_s,m/s,1.6,0.5,3.0,Hydraulic saturation velocity in down-leg,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.energy_balance_loss_coeff,-,4.0,1.0,20.0,Total loss coefficient (energy-balance gas-lift model),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.energy_balance_efficiency,-,0.04,0.01,0.5,Fraction of isothermal expansion work converted to circulation,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.lift_nozzle_fouling,-,1.0,0.0,1.0,Effective fraction of lift gas reaching the up-leg (1 = clean),per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.k_C_surface_m_s,m/s,0.0015,1e-05,0.005,Carbon mass-transfer coefficient at vessel free surface,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.kO_over_kC,-,0.6,0.2,1.5,"Ratio k_O/k_C (sqrt diffusivity ratio, penetration theory)",per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.splash_enhancement,-,9.0,0.0,60.0,Free-surface area enhancement per (m/s)^0.5 of actual lift-gas superficial velocity,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.splash_enhancement_max,-,16.0,1.0,30.0,Upper bound of free surface area factor,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.inner_site_rate_1_s,1/s,0.02,0.0,0.2,Volumetric rate constant of in-bath CO nucleation site,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.co_nucleation_overpressure_Pa,Pa,3000.0,0.0,20000.0,Critical over-pressure for CO bubble nucleation (2 sigma / r),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.bubble_equilibrium_approach,-,0.45,0.0,1.0,Approach of Ar lift bubbles to C/O/H/N equilibrium,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.k_H_m_s,m/s,0.0006,1e-05,0.005,Hydrogen liquid-side mass-transfer coefficient,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.k_N_m_s,m/s,0.00035,1e-05,0.005,Nitrogen liquid-side mass-transfer coefficient,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.k_r0_N_mol_m2_s_atm,mol/(m2 s atm),2.0,0.01,20.0,"N2 dissociation rate constant, S/O-free iron",per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.K_O_poison,1/wt%,220.0,0.0,1000.0,Surface-adsorption constant of O in N2 kinetics,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.K_S_poison,1/wt%,130.0,0.0,1000.0,Surface-adsorption constant of S in N2 kinetics,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.jet_mass_transfer_capacity_m3_s,m3/s,0.1,0.0,2.0,k*A of oxygen-jet interface for solute transport,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.o2_absorption_lambda,1/m,8.0,0.1,30.0,O2 absorption exponent per metre of tuyere submergence,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.post_combustion_fraction,-,0.35,0.0,1.0,Fraction of slip O2 burning CO in the freeboard,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.post_combustion_heat_to_bath,-,0.3,0.0,1.0,Fraction of post-combustion heat transferred to steel,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.feo_dissolution_1_s,1/s,0.08,0.0,2.0,Dissolution rate constant of jet FeO into bath,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.feo_to_skull_1_s,1/s,0.004,0.0,0.5,Loss of jet FeO to vessel skull/slag,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.deox_rate_1_s,1/s,0.05,0.001,1.0,Relaxation rate of deoxidation reactions to equilibrium,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.k_slag_metal_m_s,m/s,2e-05,0.0,0.001,Ladle slag-metal O-transfer coefficient (reoxidation),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.gamma_FeO_slag,-,2.0,0.5,5.0,Raoultian activity coefficient of FeO in ladle slag,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.leak_o2_absorption,-,0.7,0.0,1.0,Fraction of leaked O2 absorbed by the vessel bath,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.holdup_time_constant_s,s,5.0,1.0,60.0,Time constant for steel hold-up response to vacuum,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.three_zone,-,True,,,Enable stagnant ladle sub-zone (three-zone model),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.dead_zone_fraction,-,0.15,0.0,0.5,Mass fraction of ladle steel in slow-mixing zone,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.dead_zone_exchange_ratio,-,0.25,0.0,2.0,Exchange flow active<->dead zone per unit circulation,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.dead_zone_natural_exchange_kg_s,kg/s,80.0,0.0,2000.0,Natural-convection exchange without circulation,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.inclusion_bubble_capture,1/s per Nm3/s,0.0025,0.0,0.1,Bubble-capture coefficient for 10 um inclusions,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.kinetics.inclusion_aggregation_multiplier,-,1.0,0.0,10.0,Multiplier on Saffman-Turner collision kernel,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.h_steel_ladle_wall_W_m2K,W/(m2 K),1500.0,100,10000,Steel->ladle hot face convection,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.h_steel_vessel_wall_W_m2K,W/(m2 K),3000.0,100,20000,Steel->vessel/snorkel wall convection,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.emissivity_steel,-,0.35,0.05,0.95,Free steel surface emissivity in vessel,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.emissivity_slag,-,0.8,0.1,1.0,Ladle slag surface emissivity,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.emissivity_shell,-,0.85,0.1,1.0,Ladle/vessel shell emissivity,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.view_factor_ladle_top,-,0.65,0.0,1.0,View factor ladle top -> surroundings,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.h_shell_convection_W_m2K,W/(m2 K),10.0,2,60,Natural convection at shells,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.ambient_temperature_K,K,308.0,250,340,Shop ambient temperature,per shift,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.surroundings_temperature_K,K,420.0,280,900,Radiative sink seen by ladle top (hood/vessel underside),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.slag_thickness_m,m,0.1,0.0,0.4,Ladle slag layer thickness,per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.ladle_hot_face_initial_K,K,1650.0,900,1873,Ladle hot face T at RH arrival (ladle thermal history),per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.ladle_shell_initial_K,K,560.0,300,800,Ladle shell T at arrival,per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.vessel_preheat_K,K,1450.0,800,1773,Vessel inner wall T at heat start (preheat/previous heat),per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.vessel_shell_initial_K,K,470.0,300,800,Vessel shell temperature,per heat,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.thermal.wall_nodes_working_lining,-,4,2,10,Finite-volume nodes in working lining,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.argon_min_NL_min,NL/min,300.0,0,10000.0,Minimum lift gas to keep nozzles open,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.argon_max_NL_min,NL/min,3200.0,100,20000.0,Maximum lift gas,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.oxygen_max_Nm3_h,Nm3/h,3000.0,0,10000.0,Maximum oxygen flow through tuyeres,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.oxygen_max_total_Nm3,Nm3,900.0,0,5000.0,Maximum oxygen per heat (refractory/tuyere wear),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.oxygen_min_vessel_depth_m,m,0.22,0.05,1.0,Minimum vessel bath depth above tuyere for oxygen ON,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.oxygen_max_vessel_pressure_Pa,Pa_abs,30000.0,1000,101325,Oxygen permitted only below this pressure,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.pressure_min_Pa,Pa_abs,50.0,10,1000,Lowest controllable vessel pressure,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.temperature_max_K,K,1953.0,1800,2000,Steel over-temperature alarm,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.temperature_min_K,K,1823.0,1773,1900,Steel under-temperature alarm (freezing risk in snorkels),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.max_treatment_time_s,s,2700.0,300,7200,Maximum RH occupancy for the caster sequence,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.limits.oxygen_safety_prerequisites_confirmed,-,True,,,SIMULATED interlock: O2 line purge/pressure/valves OK. Unknown -> False,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.currency,,INR,,,,,,
+INPUT,plant.economics.oxygen_per_Nm3,INR/Nm3,12.0,0,10000.0,Oxygen price (ILLUSTRATIVE),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.argon_per_Nm3,INR/Nm3,45.0,0,10000.0,Argon price (ILLUSTRATIVE),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.steam_per_t,INR/t,1800.0,0,100000.0,Steam price for ejectors (ILLUSTRATIVE),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.steam_kg_per_kg_gas,kg/kg,4.5,0.5,30,Ejector steam per kg of pumped gas (ILLUSTRATIVE),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.electricity_per_kWh,INR/kWh,8.0,0,100,Electricity price,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.refractory_per_min,INR/min,900.0,0,100000.0,Vessel/snorkel refractory wear cost per treatment minute,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.delay_penalty_per_min,INR/min,2500.0,0,1000000.0,Caster sequence delay penalty,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,plant.economics.alloy_prices_per_kg,INR/kg,(structured default),,,,,ILLUSTRATIVE,
+INPUT,heat.heat_id,,SYNTHETIC-001,,,,,,
+INPUT,heat.grade_id,,IF-ULC,,,,,,
+INPUT,heat.steel_mass_t,t,300.0,50,420,Liquid steel mass at RH arrival,per heat,ladle weighing,MEASURED
+INPUT,heat.T_arrival_K,K,1893.0,1800,1973,Steel temperature at arrival,per heat,dip thermocouple,MEASURED
+INPUT,heat.composition_ppm,ppm (mass),(structured default),,,,,,LAB ANALYZED (synthetic)
+INPUT,heat.slag_mass_t,t,3.5,0.0,20.0,Ladle slag mass (carry-over + additions),per heat,estimate,ESTIMATED
+INPUT,heat.slag_composition_wtpct,,(structured default),,,,,,
+INPUT,heat.source_timestamp_utc,,,,,,,,
+INPUT,heat.assay_confidence,,medium,,,,,,
+INPUT,solver.method,-,BDF,,,scipy.integrate.solve_ivp stiff method,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.rtol,-,1e-06,1e-09,0.001,Relative tolerance,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.max_step_s,s,10.0,0.1,60.0,Maximum internal step (1-10 s substeps),per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.record_interval_s,s,10.0,1.0,120.0,Trajectory recording interval,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.mass_residual_tol,-,1e-06,1e-12,0.01,Max relative elemental closure residual,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.energy_residual_tol,-,0.0001,1e-10,0.1,Max relative energy closure residual,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.wall_time_budget_s,s,120.0,1,3600,Solver time-out budget per run,per commissioning,ILLUSTRATIVE demo default,USER-DEFINED
+INPUT,solver.seed,,20240601,,,,,,
+OUTPUT,t_s,s,,,,simulation time,every record,physics twin,PREDICTED
+OUTPUT,stage,-,,,,process stage,every record,physics twin,USER-DEFINED
+OUTPUT,P_Pa,Pa_abs,,,,vessel absolute pressure,every record,physics twin,PREDICTED
+OUTPUT,P_sp_Pa,Pa_abs,,,,pressure set-point,every record,physics twin,USER-DEFINED
+OUTPUT,argon_NL_min,NL/min,,,,lift argon (normal),every record,physics twin,USER-DEFINED
+OUTPUT,oxygen_Nm3_h,Nm3/h,,,,tuyere oxygen (normal),every record,physics twin,USER-DEFINED
+OUTPUT,T_bulk_K,K,,,,mass-averaged steel temperature,every record,physics twin,PREDICTED
+OUTPUT,T_l_K / T_d_K / T_v_K,K,,,,zone temperatures,every record,physics twin,PREDICTED
+OUTPUT,<el>_bulk_ppm,ppm,,,,"bulk composition of C,O,H,N,Al,Si,Mn,Ti,S,P,Cr,Ni,Nb,V,Cu,Mo",every record,physics twin,SOFT-SENSED/PREDICTED
+OUTPUT,<el>_ladle_ppm / <el>_vessel_ppm,ppm,,,,zone compositions,every record,physics twin,PREDICTED
+OUTPUT,q_circ_t_min,t/min,,,,steel circulation,every record,physics twin,ESTIMATED
+OUTPUT,mixing_time_95_s,s,,,,95 % mixing time,every record,physics twin,ESTIMATED
+OUTPUT,vessel_depth_m,m,,,,steel depth in vacuum vessel,every record,physics twin,PREDICTED
+OUTPUT,ladle_level_drop_m,m,,,,ladle level drop,every record,physics twin,PREDICTED
+OUTPUT,r_C_<site>_mol_s,mol/s,,,,decarburization rate per site,every record,physics twin,PREDICTED
+OUTPUT,K_app_1_min,1/min,,,,apparent decarburization constant,every record,physics twin,PREDICTED
+OUTPUT,o2_abs_eff,-,,,,oxygen absorption efficiency,every record,physics twin,PREDICTED
+OUTPUT,jet_*_mol_s,mol/s,,,,jet oxygen partition,every record,physics twin,PREDICTED
+OUTPUT,offgas_<g>_Nm3_h,Nm3/h,,,,exhaust flow per species,every record,physics twin,PREDICTED
+OUTPUT,x_<g>,-,,,,vessel gas mole fraction,every record,physics twin,PREDICTED
+OUTPUT,pump_w_air_kg_h,kg/h,,,,pump capacity air-equivalent at P,every record,physics twin,PREDICTED
+OUTPUT,Q_<term>_W,W,,,,energy ledger rates,every record,physics twin,PREDICTED
+OUTPUT,E_<term>_MJ,MJ,,,,cumulative energy ledger,every record,physics twin,PREDICTED
+OUTPUT,total_O_ppm,ppm,,,,total oxygen (inclusion model),every record,physics twin,PREDICTED (low confidence)
+OUTPUT,inclusion_bins_ppm,ppm,,,,Al2O3 by size class 2.5/7.5/20/50 um,every record,physics twin,PREDICTED (low confidence)
+OUTPUT,superheat_K,K,,,,superheat above empirical liquidus,every record,physics twin,PREDICTED
+OUTPUT,mass_balance_relative_error,-,,,,worst element closure,every record,physics twin,MODEL INTEGRITY
+OUTPUT,energy_balance_relative_error,-,,,,energy closure,every record,physics twin,MODEL INTEGRITY

@@ -1,0 +1,15 @@
+tag,label,unit,data_type,source,sample_period_s,physical_min,physical_max,missing_value_policy,sign_convention,calibration_date,override_role,value_class
+RH1.VAC.PT101,Vessel absolute pressure,Pa_abs,float,OPCUA:ns=2;s=RH1.VAC.PT101,1,10,110000,mark_unavailable,absolute,REQUIRED,ProcessEngineer,MEASURED
+RH1.AR.FT201,Lift argon flow,NL/min (0 degC 101.325 kPa),float,OPCUA:ns=2;s=RH1.AR.FT201,1,0,6000,mark_unavailable,positive into up-leg,REQUIRED,ProcessEngineer,MEASURED
+RH1.O2.FT301,Tuyere oxygen flow,Nm3/h (0 degC 101.325 kPa),float,OPCUA:ns=2;s=RH1.O2.FT301,1,0,5000,mark_unavailable,positive into vessel,REQUIRED,ProcessEngineer,MEASURED
+RH1.OG.AT401_CO,Off-gas CO,vol% dry,float,OPCUA:ns=2;s=RH1.OG.AT401,2,0,100,mark_unavailable,dry basis,REQUIRED,ProcessEngineer,MEASURED
+RH1.OG.AT402_CO2,Off-gas CO2,vol% dry,float,OPCUA:ns=2;s=RH1.OG.AT402,2,0,100,mark_unavailable,dry basis,REQUIRED,ProcessEngineer,MEASURED
+RH1.OG.FT403,Off-gas flow,Nm3/h,float,OPCUA:ns=2;s=RH1.OG.FT403,2,0,20000,mark_unavailable,positive to pumps,REQUIRED,ProcessEngineer,MEASURED
+RH1.TC.TE501,Dip thermocouple,degC,float,L1 probe system,event,1450,1750,mark_unavailable,,REQUIRED,Operator,MEASURED
+RH1.PROBE.O_ACT,Oxygen activity probe,ppm,float,L1 probe system,event,0,2000,mark_unavailable,,REQUIRED,Operator,MEASURED
+LIMS.C,Carbon (lab),ppm,float,LIMS,event,0,5000,mark_unavailable,,REQUIRED,Metallurgist,LAB ANALYZED
+LIMS.N,Nitrogen (lab),ppm,float,LIMS,event,0,300,mark_unavailable,,REQUIRED,Metallurgist,LAB ANALYZED
+LIMS.H,Hydrogen (probe/lab),ppm,float,LIMS,event,0,20,mark_unavailable,,REQUIRED,Metallurgist,LAB ANALYZED
+RH1.LADLE.WT,Ladle steel weight,t,float,crane scale,event,0,450,mark_unavailable,,REQUIRED,Operator,MEASURED
+RH1.LIFT.POS,Ladle lift position / immersion,m,float,OPCUA:ns=2;s=RH1.LIFT.POS,1,0,3,mark_unavailable,positive up,REQUIRED,ProcessEngineer,MEASURED
+RH1.EJ.STAGE,Ejector stages in service,-,int,OPCUA:ns=2;s=RH1.EJ.STAGE,1,0,6,hold_last,,REQUIRED,ProcessEngineer,MEASURED

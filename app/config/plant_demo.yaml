@@ -1,0 +1,35 @@
+# ILLUSTRATIVE demo plant ("INDUSTRY-X"). Every value is a demonstration default and is
+# REQUIRED-FOR-COMMISSIONING to be replaced with plant data (see OPTIONAL CONFIGURATION FORM).
+# The authoritative typed defaults live in app/schemas/configuration.py; this file documents them
+# and is accepted by POST /api/v1/simulations as the `plant` object.
+plant_id: INDUSTRY-X
+station_id: RH-OB-1
+upstream_shop: BOF-2
+route: BOF-RHOB-CC
+caster_id: CC-2
+timezone: Asia/Kolkata
+variant: RH_OB
+chemical_heating_enabled: true
+geometry:
+  capacity_t: 300
+  ladle_inner_diameter_m: 3.85
+  snorkel_inner_diameter_m: 0.75
+  snorkel_length_m: 1.45
+  immersion_depth_m: 0.55
+  vessel_inner_diameter_m: 3.0
+  vessel_height_m: 10.5
+  duct_and_cooler_volume_m3: 85
+  lift_nozzle_count: 12
+  oxygen_tuyere_count: 2
+limits:
+  argon_min_NL_min: 300
+  argon_max_NL_min: 3200
+  oxygen_max_Nm3_h: 3000
+  oxygen_max_total_Nm3: 900
+  max_treatment_time_s: 2700
+  oxygen_safety_prerequisites_confirmed: true   # SIMULATED interlock indicator
+required_for_commissioning:
+  - OEM vessel / snorkel / tuyere drawings
+  - ejector capacity curve vs suction pressure
+  - argon and oxygen flowmeter reference states
+  - site operating limits signed off by the plant engineer

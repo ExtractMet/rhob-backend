@@ -1,0 +1,9 @@
+# ILLUSTRATIVE alarm policy (limits must be supplied by the site engineer; NOT guessed trip settings)
+version: alarm-policy-demo-1
+policy:
+  repeat_suppression_s: 120
+  stale_signal_factor: 3        # no update > 3 x sample period -> STALE
+  advisory_inhibit_on: [H02, H12, H13, H14]
+  read_only_on: [H03, H16]
+  never_recommend_oxygen_if: ["oxygen_safety_prerequisites_confirmed == false", "H02 active", "H06 active"]
+interlock_ownership: "All interlocks are owned by the plant DCS/PLC. The application shows SIMULATED read-only indicators."

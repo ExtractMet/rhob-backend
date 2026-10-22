@@ -1,0 +1,418 @@
+# SYNTHETIC live signal trace (noisy measurements of a twin run) - illustrative
+t_s,tag,value,unit,quality,source
+0.0,RH1.VAC.PT101,101633.8,Pa_abs,GOOD,synthetic
+0.0,RH1.AR.FT201,296.9,NL/min,GOOD,synthetic
+0.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+0.0,RH1.OG.AT401_CO,0.0,vol% dry,GOOD,synthetic
+30.0,RH1.VAC.PT101,99347.6,Pa_abs,GOOD,synthetic
+30.0,RH1.AR.FT201,296.1,NL/min,GOOD,synthetic
+30.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+30.0,RH1.OG.AT401_CO,0.0,vol% dry,GOOD,synthetic
+60.0,RH1.VAC.PT101,101307.5,Pa_abs,GOOD,synthetic
+60.0,RH1.AR.FT201,297.4,NL/min,GOOD,synthetic
+60.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+60.0,RH1.OG.AT401_CO,0.0,vol% dry,GOOD,synthetic
+90.0,RH1.VAC.PT101,101435.5,Pa_abs,GOOD,synthetic
+90.0,RH1.AR.FT201,1007.2,NL/min,GOOD,synthetic
+90.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+90.0,RH1.OG.AT401_CO,0.13,vol% dry,GOOD,synthetic
+120.0,RH1.VAC.PT101,69100.7,Pa_abs,GOOD,synthetic
+120.0,RH1.AR.FT201,1726.3,NL/min,GOOD,synthetic
+120.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+120.0,RH1.OG.AT401_CO,0.29,vol% dry,GOOD,synthetic
+150.0,RH1.VAC.PT101,46143.9,Pa_abs,GOOD,synthetic
+150.0,RH1.AR.FT201,1731.1,NL/min,GOOD,synthetic
+150.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+150.0,RH1.OG.AT401_CO,0.51,vol% dry,GOOD,synthetic
+180.0,RH1.VAC.PT101,31306.6,Pa_abs,GOOD,synthetic
+180.0,RH1.AR.FT201,1736.9,NL/min,GOOD,synthetic
+180.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+180.0,RH1.OG.AT401_CO,2.41,vol% dry,GOOD,synthetic
+210.0,RH1.VAC.PT101,21693.1,Pa_abs,GOOD,synthetic
+210.0,RH1.AR.FT201,1750.5,NL/min,GOOD,synthetic
+210.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+210.0,RH1.OG.AT401_CO,28.52,vol% dry,GOOD,synthetic
+240.0,RH1.VAC.PT101,14631.6,Pa_abs,GOOD,synthetic
+240.0,RH1.AR.FT201,1728.8,NL/min,GOOD,synthetic
+240.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+240.0,RH1.OG.AT401_CO,56.94,vol% dry,GOOD,synthetic
+270.0,RH1.VAC.PT101,11565.8,Pa_abs,GOOD,synthetic
+270.0,RH1.AR.FT201,2469.1,NL/min,GOOD,synthetic
+270.0,RH1.O2.FT301,1983.5,Nm3/h,GOOD,synthetic
+270.0,RH1.OG.AT401_CO,73.16,vol% dry,GOOD,synthetic
+300.0,RH1.VAC.PT101,10608.4,Pa_abs,GOOD,synthetic
+300.0,RH1.AR.FT201,2503.5,NL/min,GOOD,synthetic
+300.0,RH1.O2.FT301,1986.7,Nm3/h,GOOD,synthetic
+300.0,RH1.OG.AT401_CO,71.64,vol% dry,GOOD,synthetic
+330.0,RH1.VAC.PT101,9611.6,Pa_abs,GOOD,synthetic
+330.0,RH1.AR.FT201,2495.4,NL/min,GOOD,synthetic
+330.0,RH1.O2.FT301,2017.4,Nm3/h,GOOD,synthetic
+330.0,RH1.OG.AT401_CO,71.93,vol% dry,GOOD,synthetic
+360.0,RH1.VAC.PT101,8819.9,Pa_abs,GOOD,synthetic
+360.0,RH1.AR.FT201,2491.7,NL/min,GOOD,synthetic
+360.0,RH1.O2.FT301,2005.8,Nm3/h,GOOD,synthetic
+360.0,RH1.OG.AT401_CO,73.03,vol% dry,GOOD,synthetic
+390.0,RH1.VAC.PT101,7882.5,Pa_abs,GOOD,synthetic
+390.0,RH1.AR.FT201,2482.0,NL/min,GOOD,synthetic
+390.0,RH1.O2.FT301,1990.6,Nm3/h,GOOD,synthetic
+390.0,RH1.OG.AT401_CO,70.41,vol% dry,GOOD,synthetic
+420.0,RH1.VAC.PT101,7286.6,Pa_abs,GOOD,synthetic
+420.0,RH1.AR.FT201,2527.2,NL/min,GOOD,synthetic
+420.0,RH1.O2.FT301,1982.7,Nm3/h,GOOD,synthetic
+420.0,RH1.OG.AT401_CO,73.87,vol% dry,GOOD,synthetic
+450.0,RH1.VAC.PT101,6560.6,Pa_abs,GOOD,synthetic
+450.0,RH1.AR.FT201,2481.7,NL/min,GOOD,synthetic
+450.0,RH1.O2.FT301,2003.3,Nm3/h,GOOD,synthetic
+450.0,RH1.OG.AT401_CO,72.89,vol% dry,GOOD,synthetic
+480.0,RH1.VAC.PT101,6116.5,Pa_abs,GOOD,synthetic
+480.0,RH1.AR.FT201,2509.8,NL/min,GOOD,synthetic
+480.0,RH1.O2.FT301,1993.0,Nm3/h,GOOD,synthetic
+480.0,RH1.OG.AT401_CO,69.38,vol% dry,GOOD,synthetic
+510.0,RH1.VAC.PT101,5590.4,Pa_abs,GOOD,synthetic
+510.0,RH1.AR.FT201,2485.2,NL/min,GOOD,synthetic
+510.0,RH1.O2.FT301,1974.5,Nm3/h,GOOD,synthetic
+510.0,RH1.OG.AT401_CO,67.03,vol% dry,GOOD,synthetic
+540.0,RH1.VAC.PT101,5014.9,Pa_abs,GOOD,synthetic
+540.0,RH1.AR.FT201,2502.4,NL/min,GOOD,synthetic
+540.0,RH1.O2.FT301,2002.8,Nm3/h,GOOD,synthetic
+540.0,RH1.OG.AT401_CO,69.83,vol% dry,GOOD,synthetic
+570.0,RH1.VAC.PT101,3625.3,Pa_abs,GOOD,synthetic
+570.0,RH1.AR.FT201,2493.9,NL/min,GOOD,synthetic
+570.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+570.0,RH1.OG.AT401_CO,80.16,vol% dry,GOOD,synthetic
+600.0,RH1.VAC.PT101,2698.4,Pa_abs,GOOD,synthetic
+600.0,RH1.AR.FT201,2473.5,NL/min,GOOD,synthetic
+600.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+600.0,RH1.OG.AT401_CO,80.24,vol% dry,GOOD,synthetic
+630.0,RH1.VAC.PT101,1959.9,Pa_abs,GOOD,synthetic
+630.0,RH1.AR.FT201,2502.1,NL/min,GOOD,synthetic
+630.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+630.0,RH1.OG.AT401_CO,80.76,vol% dry,GOOD,synthetic
+660.0,RH1.VAC.PT101,1473.8,Pa_abs,GOOD,synthetic
+660.0,RH1.AR.FT201,2501.1,NL/min,GOOD,synthetic
+660.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+660.0,RH1.OG.AT401_CO,80.29,vol% dry,GOOD,synthetic
+690.0,RH1.VAC.PT101,1077.0,Pa_abs,GOOD,synthetic
+690.0,RH1.AR.FT201,2488.0,NL/min,GOOD,synthetic
+690.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+690.0,RH1.OG.AT401_CO,76.02,vol% dry,GOOD,synthetic
+720.0,RH1.VAC.PT101,787.5,Pa_abs,GOOD,synthetic
+720.0,RH1.AR.FT201,2465.2,NL/min,GOOD,synthetic
+720.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+720.0,RH1.OG.AT401_CO,76.29,vol% dry,GOOD,synthetic
+750.0,RH1.VAC.PT101,257.2,Pa_abs,GOOD,synthetic
+750.0,RH1.AR.FT201,2522.4,NL/min,GOOD,synthetic
+750.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+750.0,RH1.OG.AT401_CO,80.25,vol% dry,GOOD,synthetic
+780.0,RH1.VAC.PT101,236.8,Pa_abs,GOOD,synthetic
+780.0,RH1.AR.FT201,2484.9,NL/min,GOOD,synthetic
+780.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+780.0,RH1.OG.AT401_CO,75.88,vol% dry,GOOD,synthetic
+810.0,RH1.VAC.PT101,223.7,Pa_abs,GOOD,synthetic
+810.0,RH1.AR.FT201,2447.0,NL/min,GOOD,synthetic
+810.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+810.0,RH1.OG.AT401_CO,75.46,vol% dry,GOOD,synthetic
+840.0,RH1.VAC.PT101,204.8,Pa_abs,GOOD,synthetic
+840.0,RH1.AR.FT201,2454.0,NL/min,GOOD,synthetic
+840.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+840.0,RH1.OG.AT401_CO,72.04,vol% dry,GOOD,synthetic
+870.0,RH1.VAC.PT101,192.0,Pa_abs,GOOD,synthetic
+870.0,RH1.AR.FT201,2490.5,NL/min,GOOD,synthetic
+870.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+870.0,RH1.OG.AT401_CO,70.95,vol% dry,GOOD,synthetic
+900.0,RH1.VAC.PT101,176.3,Pa_abs,GOOD,synthetic
+900.0,RH1.AR.FT201,2494.5,NL/min,GOOD,synthetic
+900.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+900.0,RH1.OG.AT401_CO,72.53,vol% dry,GOOD,synthetic
+930.0,RH1.VAC.PT101,167.1,Pa_abs,GOOD,synthetic
+930.0,RH1.AR.FT201,2498.9,NL/min,GOOD,synthetic
+930.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+930.0,RH1.OG.AT401_CO,65.45,vol% dry,GOOD,synthetic
+960.0,RH1.VAC.PT101,153.2,Pa_abs,GOOD,synthetic
+960.0,RH1.AR.FT201,2466.9,NL/min,GOOD,synthetic
+960.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+960.0,RH1.OG.AT401_CO,63.29,vol% dry,GOOD,synthetic
+990.0,RH1.VAC.PT101,144.4,Pa_abs,GOOD,synthetic
+990.0,RH1.AR.FT201,2484.5,NL/min,GOOD,synthetic
+990.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+990.0,RH1.OG.AT401_CO,62.17,vol% dry,GOOD,synthetic
+1020.0,RH1.VAC.PT101,134.0,Pa_abs,GOOD,synthetic
+1020.0,RH1.AR.FT201,2510.9,NL/min,GOOD,synthetic
+1020.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1020.0,RH1.OG.AT401_CO,67.63,vol% dry,GOOD,synthetic
+1050.0,RH1.VAC.PT101,125.0,Pa_abs,GOOD,synthetic
+1050.0,RH1.AR.FT201,2465.4,NL/min,GOOD,synthetic
+1050.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1050.0,RH1.OG.AT401_CO,60.7,vol% dry,GOOD,synthetic
+1080.0,RH1.VAC.PT101,115.0,Pa_abs,GOOD,synthetic
+1080.0,RH1.AR.FT201,2479.7,NL/min,GOOD,synthetic
+1080.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1080.0,RH1.OG.AT401_CO,57.96,vol% dry,GOOD,synthetic
+1110.0,RH1.VAC.PT101,109.2,Pa_abs,GOOD,synthetic
+1110.0,RH1.AR.FT201,2493.9,NL/min,GOOD,synthetic
+1110.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1110.0,RH1.OG.AT401_CO,54.42,vol% dry,GOOD,synthetic
+1140.0,RH1.VAC.PT101,99.0,Pa_abs,GOOD,synthetic
+1140.0,RH1.AR.FT201,2477.9,NL/min,GOOD,synthetic
+1140.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1140.0,RH1.OG.AT401_CO,56.96,vol% dry,GOOD,synthetic
+1170.0,RH1.VAC.PT101,94.0,Pa_abs,GOOD,synthetic
+1170.0,RH1.AR.FT201,2514.5,NL/min,GOOD,synthetic
+1170.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1170.0,RH1.OG.AT401_CO,50.16,vol% dry,GOOD,synthetic
+1200.0,RH1.VAC.PT101,86.7,Pa_abs,GOOD,synthetic
+1200.0,RH1.AR.FT201,2471.9,NL/min,GOOD,synthetic
+1200.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1200.0,RH1.OG.AT401_CO,48.68,vol% dry,GOOD,synthetic
+1230.0,RH1.VAC.PT101,82.3,Pa_abs,GOOD,synthetic
+1230.0,RH1.AR.FT201,2467.5,NL/min,GOOD,synthetic
+1230.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1230.0,RH1.OG.AT401_CO,48.36,vol% dry,GOOD,synthetic
+1260.0,RH1.VAC.PT101,76.1,Pa_abs,GOOD,synthetic
+1260.0,RH1.AR.FT201,2489.0,NL/min,GOOD,synthetic
+1260.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1260.0,RH1.OG.AT401_CO,46.32,vol% dry,GOOD,synthetic
+1290.0,RH1.VAC.PT101,70.8,Pa_abs,GOOD,synthetic
+1290.0,RH1.AR.FT201,2459.5,NL/min,GOOD,synthetic
+1290.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1290.0,RH1.OG.AT401_CO,43.85,vol% dry,GOOD,synthetic
+1318.0,RH1.VAC.PT101,67.8,Pa_abs,GOOD,synthetic
+1318.0,RH1.AR.FT201,2494.0,NL/min,GOOD,synthetic
+1318.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1318.0,RH1.OG.AT401_CO,42.04,vol% dry,GOOD,synthetic
+1330.0,RH1.VAC.PT101,96.2,Pa_abs,GOOD,synthetic
+1330.0,RH1.AR.FT201,2495.5,NL/min,GOOD,synthetic
+1330.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1330.0,RH1.OG.AT401_CO,20.03,vol% dry,GOOD,synthetic
+1360.0,RH1.VAC.PT101,95.9,Pa_abs,GOOD,synthetic
+1360.0,RH1.AR.FT201,2528.2,NL/min,GOOD,synthetic
+1360.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1360.0,RH1.OG.AT401_CO,25.23,vol% dry,GOOD,synthetic
+1390.0,RH1.VAC.PT101,93.0,Pa_abs,GOOD,synthetic
+1390.0,RH1.AR.FT201,2531.1,NL/min,GOOD,synthetic
+1390.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1390.0,RH1.OG.AT401_CO,12.27,vol% dry,GOOD,synthetic
+1420.0,RH1.VAC.PT101,93.7,Pa_abs,GOOD,synthetic
+1420.0,RH1.AR.FT201,2526.4,NL/min,GOOD,synthetic
+1420.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1420.0,RH1.OG.AT401_CO,7.4,vol% dry,GOOD,synthetic
+1450.0,RH1.VAC.PT101,94.5,Pa_abs,GOOD,synthetic
+1450.0,RH1.AR.FT201,2480.2,NL/min,GOOD,synthetic
+1450.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1450.0,RH1.OG.AT401_CO,6.43,vol% dry,GOOD,synthetic
+1480.0,RH1.VAC.PT101,94.2,Pa_abs,GOOD,synthetic
+1480.0,RH1.AR.FT201,2525.0,NL/min,GOOD,synthetic
+1480.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1480.0,RH1.OG.AT401_CO,6.2,vol% dry,GOOD,synthetic
+1510.0,RH1.VAC.PT101,91.9,Pa_abs,GOOD,synthetic
+1510.0,RH1.AR.FT201,2488.8,NL/min,GOOD,synthetic
+1510.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1510.0,RH1.OG.AT401_CO,5.74,vol% dry,GOOD,synthetic
+1540.0,RH1.VAC.PT101,93.0,Pa_abs,GOOD,synthetic
+1540.0,RH1.AR.FT201,2481.7,NL/min,GOOD,synthetic
+1540.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1540.0,RH1.OG.AT401_CO,5.65,vol% dry,GOOD,synthetic
+1570.0,RH1.VAC.PT101,93.8,Pa_abs,GOOD,synthetic
+1570.0,RH1.AR.FT201,2477.9,NL/min,GOOD,synthetic
+1570.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1570.0,RH1.OG.AT401_CO,5.98,vol% dry,GOOD,synthetic
+1600.0,RH1.VAC.PT101,94.3,Pa_abs,GOOD,synthetic
+1600.0,RH1.AR.FT201,2523.3,NL/min,GOOD,synthetic
+1600.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1600.0,RH1.OG.AT401_CO,5.62,vol% dry,GOOD,synthetic
+1630.0,RH1.VAC.PT101,93.6,Pa_abs,GOOD,synthetic
+1630.0,RH1.AR.FT201,2496.0,NL/min,GOOD,synthetic
+1630.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1630.0,RH1.OG.AT401_CO,5.49,vol% dry,GOOD,synthetic
+1660.0,RH1.VAC.PT101,93.8,Pa_abs,GOOD,synthetic
+1660.0,RH1.AR.FT201,2495.7,NL/min,GOOD,synthetic
+1660.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1660.0,RH1.OG.AT401_CO,5.93,vol% dry,GOOD,synthetic
+1690.0,RH1.VAC.PT101,92.0,Pa_abs,GOOD,synthetic
+1690.0,RH1.AR.FT201,2110.4,NL/min,GOOD,synthetic
+1690.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1690.0,RH1.OG.AT401_CO,6.0,vol% dry,GOOD,synthetic
+1720.0,RH1.VAC.PT101,93.1,Pa_abs,GOOD,synthetic
+1720.0,RH1.AR.FT201,2142.0,NL/min,GOOD,synthetic
+1720.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1720.0,RH1.OG.AT401_CO,5.94,vol% dry,GOOD,synthetic
+1750.0,RH1.VAC.PT101,90.8,Pa_abs,GOOD,synthetic
+1750.0,RH1.AR.FT201,2113.1,NL/min,GOOD,synthetic
+1750.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1750.0,RH1.OG.AT401_CO,5.91,vol% dry,GOOD,synthetic
+1780.0,RH1.VAC.PT101,92.0,Pa_abs,GOOD,synthetic
+1780.0,RH1.AR.FT201,2114.5,NL/min,GOOD,synthetic
+1780.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1780.0,RH1.OG.AT401_CO,5.69,vol% dry,GOOD,synthetic
+1810.0,RH1.VAC.PT101,94.7,Pa_abs,GOOD,synthetic
+1810.0,RH1.AR.FT201,2089.3,NL/min,GOOD,synthetic
+1810.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1810.0,RH1.OG.AT401_CO,6.23,vol% dry,GOOD,synthetic
+1840.0,RH1.VAC.PT101,95.4,Pa_abs,GOOD,synthetic
+1840.0,RH1.AR.FT201,2091.7,NL/min,GOOD,synthetic
+1840.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1840.0,RH1.OG.AT401_CO,5.92,vol% dry,GOOD,synthetic
+1870.0,RH1.VAC.PT101,94.3,Pa_abs,GOOD,synthetic
+1870.0,RH1.AR.FT201,2095.6,NL/min,GOOD,synthetic
+1870.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1870.0,RH1.OG.AT401_CO,5.95,vol% dry,GOOD,synthetic
+1900.0,RH1.VAC.PT101,93.1,Pa_abs,GOOD,synthetic
+1900.0,RH1.AR.FT201,2108.5,NL/min,GOOD,synthetic
+1900.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1900.0,RH1.OG.AT401_CO,5.54,vol% dry,GOOD,synthetic
+1930.0,RH1.VAC.PT101,92.5,Pa_abs,GOOD,synthetic
+1930.0,RH1.AR.FT201,2110.9,NL/min,GOOD,synthetic
+1930.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1930.0,RH1.OG.AT401_CO,5.64,vol% dry,GOOD,synthetic
+1960.0,RH1.VAC.PT101,93.1,Pa_abs,GOOD,synthetic
+1960.0,RH1.AR.FT201,2137.9,NL/min,GOOD,synthetic
+1960.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1960.0,RH1.OG.AT401_CO,5.76,vol% dry,GOOD,synthetic
+1985.0,RH1.VAC.PT101,92.7,Pa_abs,GOOD,synthetic
+1985.0,RH1.AR.FT201,2116.5,NL/min,GOOD,synthetic
+1985.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+1985.0,RH1.OG.AT401_CO,5.72,vol% dry,GOOD,synthetic
+2010.0,RH1.VAC.PT101,92.6,Pa_abs,GOOD,synthetic
+2010.0,RH1.AR.FT201,2160.8,NL/min,GOOD,synthetic
+2010.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2010.0,RH1.OG.AT401_CO,5.7,vol% dry,GOOD,synthetic
+2040.0,RH1.VAC.PT101,91.9,Pa_abs,GOOD,synthetic
+2040.0,RH1.AR.FT201,2093.0,NL/min,GOOD,synthetic
+2040.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2040.0,RH1.OG.AT401_CO,5.65,vol% dry,GOOD,synthetic
+2070.0,RH1.VAC.PT101,93.1,Pa_abs,GOOD,synthetic
+2070.0,RH1.AR.FT201,2079.6,NL/min,GOOD,synthetic
+2070.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2070.0,RH1.OG.AT401_CO,5.65,vol% dry,GOOD,synthetic
+2100.0,RH1.VAC.PT101,91.6,Pa_abs,GOOD,synthetic
+2100.0,RH1.AR.FT201,2106.5,NL/min,GOOD,synthetic
+2100.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2100.0,RH1.OG.AT401_CO,5.55,vol% dry,GOOD,synthetic
+2130.0,RH1.VAC.PT101,101291.7,Pa_abs,GOOD,synthetic
+2130.0,RH1.AR.FT201,995.0,NL/min,GOOD,synthetic
+2130.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2130.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2160.0,RH1.VAC.PT101,103083.4,Pa_abs,GOOD,synthetic
+2160.0,RH1.AR.FT201,970.4,NL/min,GOOD,synthetic
+2160.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2160.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2190.0,RH1.VAC.PT101,101624.2,Pa_abs,GOOD,synthetic
+2190.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2190.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2190.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2220.0,RH1.VAC.PT101,103074.5,Pa_abs,GOOD,synthetic
+2220.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2220.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2220.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2250.0,RH1.VAC.PT101,101262.1,Pa_abs,GOOD,synthetic
+2250.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2250.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2250.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2280.0,RH1.VAC.PT101,101914.6,Pa_abs,GOOD,synthetic
+2280.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2280.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2280.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2310.0,RH1.VAC.PT101,103091.3,Pa_abs,GOOD,synthetic
+2310.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2310.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2310.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2340.0,RH1.VAC.PT101,101391.7,Pa_abs,GOOD,synthetic
+2340.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2340.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2340.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2370.0,RH1.VAC.PT101,102117.0,Pa_abs,GOOD,synthetic
+2370.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2370.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2370.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2400.0,RH1.VAC.PT101,103169.1,Pa_abs,GOOD,synthetic
+2400.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2400.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2400.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2430.0,RH1.VAC.PT101,100136.8,Pa_abs,GOOD,synthetic
+2430.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2430.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2430.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2460.0,RH1.VAC.PT101,100616.1,Pa_abs,GOOD,synthetic
+2460.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2460.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2460.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2490.0,RH1.VAC.PT101,100644.3,Pa_abs,GOOD,synthetic
+2490.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2490.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2490.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2520.0,RH1.VAC.PT101,99002.7,Pa_abs,GOOD,synthetic
+2520.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2520.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2520.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2550.0,RH1.VAC.PT101,102961.9,Pa_abs,GOOD,synthetic
+2550.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2550.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2550.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2580.0,RH1.VAC.PT101,99721.8,Pa_abs,GOOD,synthetic
+2580.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2580.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2580.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2610.0,RH1.VAC.PT101,100745.8,Pa_abs,GOOD,synthetic
+2610.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2610.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2610.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2640.0,RH1.VAC.PT101,101561.8,Pa_abs,GOOD,synthetic
+2640.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2640.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2640.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2670.0,RH1.VAC.PT101,101169.8,Pa_abs,GOOD,synthetic
+2670.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2670.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2670.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2700.0,RH1.VAC.PT101,101197.7,Pa_abs,GOOD,synthetic
+2700.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2700.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2700.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2730.0,RH1.VAC.PT101,101529.3,Pa_abs,GOOD,synthetic
+2730.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2730.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2730.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2760.0,RH1.VAC.PT101,102192.5,Pa_abs,GOOD,synthetic
+2760.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2760.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2760.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2790.0,RH1.VAC.PT101,101116.5,Pa_abs,GOOD,synthetic
+2790.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2790.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2790.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2820.0,RH1.VAC.PT101,101433.7,Pa_abs,GOOD,synthetic
+2820.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2820.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2820.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2850.0,RH1.VAC.PT101,99701.9,Pa_abs,GOOD,synthetic
+2850.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2850.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2850.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2880.0,RH1.VAC.PT101,101604.3,Pa_abs,GOOD,synthetic
+2880.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2880.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2880.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2910.0,RH1.VAC.PT101,100846.4,Pa_abs,GOOD,synthetic
+2910.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2910.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2910.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2940.0,RH1.VAC.PT101,102094.6,Pa_abs,GOOD,synthetic
+2940.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2940.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2940.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+2970.0,RH1.VAC.PT101,101142.4,Pa_abs,GOOD,synthetic
+2970.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+2970.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+2970.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+3000.0,RH1.VAC.PT101,101852.5,Pa_abs,GOOD,synthetic
+3000.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+3000.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+3000.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+3030.0,RH1.VAC.PT101,99305.0,Pa_abs,GOOD,synthetic
+3030.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+3030.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+3030.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic
+3060.0,RH1.VAC.PT101,100637.2,Pa_abs,GOOD,synthetic
+3060.0,RH1.AR.FT201,0.0,NL/min,GOOD,synthetic
+3060.0,RH1.O2.FT301,0.0,Nm3/h,GOOD,synthetic
+3060.0,RH1.OG.AT401_CO,0.01,vol% dry,GOOD,synthetic

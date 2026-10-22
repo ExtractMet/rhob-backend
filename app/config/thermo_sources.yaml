@@ -1,0 +1,21 @@
+# Provenance of thermochemical data used by app/physics/thermodynamics.py (ENGINEERING DEMO).
+# A plant deployment replaces these with its adopted database and records the change here.
+version: thermo-demo-1.0.0
+standard_state: "1 wt% Henrian in liquid Fe; gases in atm; oxides pure"
+sources:
+  T1: "Sigworth G.K., Elliott J.F., The thermodynamics of liquid dilute iron alloys, Metal Science 8 (1974) 298-310. doi:10.1179/msc.1974.8.1.298"
+  T2: "Turkdogan E.T., Fundamentals of Steelmaking, The Institute of Materials, London (1996)."
+  T3: "JSPS 19th Committee, Steelmaking Data Sourcebook, Gordon and Breach (1988)."
+reactions:
+  C_O_CO: {logK: "1160/T + 2.003", K: "pCO/(aC aO)", source: T2/T3}
+  O2_O: {dG: "-117110 - 3.39 T  J/mol", source: T1}
+  Al_deox: {dG: "-1202000 + 386.3 T J/mol (2Al+3O=Al2O3)", source: T2}
+  Si_deox: {logK: "30410/T - 11.59", source: T2}
+  Mn_deox: {logK: "14450/T - 6.43", source: T2}
+  Ti_deox: {dG: "-675580 + 229.4 T J/mol (derived by Hess law; lower confidence)", source: "T1 + pure-substance data"}
+  FeO_O: {logK: "6150/T - 2.604 (Fe + O = FeO(l))", source: T2}
+  H_sieverts: {log_pct_H: "-1905/T - 1.591 + 0.5 log pH2", source: T1}
+  N_sieverts: {log_pct_N: "-188/T - 1.246 + 0.5 log pN2", source: T1}
+interaction_parameters: "First-order Wagner e_i^j at 1873 K from T1/T3; missing pairs set to zero (documented)."
+kinetic_parameters: "ALL kinetic / transport parameters in KineticsConfig are ILLUSTRATIVE demo values to be calibrated (docs/VALIDATION_PLAN.md)."
+licensing: "Values are published scientific data cited for engineering use; no proprietary tables copied."

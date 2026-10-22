@@ -1,0 +1,118 @@
+# ILLUSTRATIVE grade cards for the engineering demonstration (NOT plant specifications).
+# Plants replace these with their own controlled grade cards; every field is required-for-commissioning.
+version: grades-demo-1.0.0
+grades:
+  - grade_id: IF-ULC
+    description: Interstitial-free ultra-low-carbon sheet steel (Ti-stabilized)
+    family: IF
+    C_max_ppm: 25
+    N_max_ppm: 40
+    H_max_ppm: 2.0
+    O_diss_max_after_deox_ppm: 8
+    Al_min_wtpct: 0.030
+    Al_max_wtpct: 0.060
+    Si_max_wtpct: 0.020
+    Mn_min_wtpct: 0.10
+    Mn_max_wtpct: 0.25
+    Ti_min_wtpct: 0.040
+    Ti_max_wtpct: 0.080
+    T_end_min_K: 1858
+    T_end_max_K: 1878
+    caster_superheat_target_K: 28
+    transfer_to_caster_s: 900
+    max_treatment_time_s: 2400
+    total_oxygen_max_ppm: 30
+    priority: [C, Ti, Al, T, N, H]
+    rh_ob_suitable: true
+  - grade_id: ULC-DRAWING
+    description: Ultra-low-carbon deep-drawing steel (Al-killed)
+    family: ULC
+    C_max_ppm: 40
+    N_max_ppm: 45
+    H_max_ppm: 2.5
+    O_diss_max_after_deox_ppm: 10
+    Al_min_wtpct: 0.025
+    Al_max_wtpct: 0.055
+    Si_max_wtpct: 0.030
+    Mn_min_wtpct: 0.10
+    Mn_max_wtpct: 0.30
+    T_end_min_K: 1856
+    T_end_max_K: 1876
+    caster_superheat_target_K: 28
+    transfer_to_caster_s: 900
+    max_treatment_time_s: 2400
+    total_oxygen_max_ppm: 35
+    priority: [C, Al, T, N, H]
+    rh_ob_suitable: true
+  - grade_id: LC-DRAWING
+    description: Low-carbon drawing quality (Al-killed)
+    family: LC
+    C_max_ppm: 300
+    N_max_ppm: 50
+    H_max_ppm: 3.0
+    O_diss_max_after_deox_ppm: 10
+    Al_min_wtpct: 0.025
+    Al_max_wtpct: 0.060
+    Si_max_wtpct: 0.040
+    T_end_min_K: 1853
+    T_end_max_K: 1875
+    caster_superheat_target_K: 30
+    transfer_to_caster_s: 900
+    max_treatment_time_s: 1800
+    total_oxygen_max_ppm: 40
+    priority: [T, Al, C]
+    rh_ob_suitable: true
+  - grade_id: ELEC-NO
+    description: Non-oriented electrical steel base (ULC, Si-alloyed after deoxidation) - metallurgy simplified
+    family: ELECTRICAL
+    C_max_ppm: 30
+    N_max_ppm: 30
+    H_max_ppm: 2.0
+    O_diss_max_after_deox_ppm: 10
+    Al_min_wtpct: 0.20
+    Al_max_wtpct: 0.40
+    Si_max_wtpct: 1.60
+    T_end_min_K: 1860
+    T_end_max_K: 1885
+    caster_superheat_target_K: 25
+    transfer_to_caster_s: 900
+    max_treatment_time_s: 2700
+    total_oxygen_max_ppm: 25
+    priority: [C, N, Si, Al, T]
+    rh_ob_suitable: true
+  - grade_id: LOW-H-PLATE
+    description: Low-hydrogen heavy plate (degassing only; oxygen blowing forbidden)
+    family: PLATE
+    C_max_ppm: 1800
+    N_max_ppm: 60
+    H_max_ppm: 1.5
+    O_diss_max_after_deox_ppm: 8
+    Al_min_wtpct: 0.020
+    Al_max_wtpct: 0.050
+    Si_max_wtpct: 0.40
+    T_end_min_K: 1840
+    T_end_max_K: 1865
+    caster_superheat_target_K: 22
+    transfer_to_caster_s: 900
+    max_treatment_time_s: 2100
+    total_oxygen_max_ppm: 25
+    priority: [H, T, Al]
+    rh_ob_suitable: false
+  - grade_id: LOW-N-ULC
+    description: Low-nitrogen ULC (demanding N target; feasibility often limited)
+    family: ULC
+    C_max_ppm: 30
+    N_max_ppm: 25
+    H_max_ppm: 2.0
+    O_diss_max_after_deox_ppm: 8
+    Al_min_wtpct: 0.030
+    Al_max_wtpct: 0.060
+    Si_max_wtpct: 0.020
+    T_end_min_K: 1858
+    T_end_max_K: 1878
+    caster_superheat_target_K: 28
+    transfer_to_caster_s: 900
+    max_treatment_time_s: 2400
+    total_oxygen_max_ppm: 30
+    priority: [C, N, Al, T]
+    rh_ob_suitable: true
