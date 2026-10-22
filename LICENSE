@@ -1,0 +1,15 @@
+Copyright (c) 2026 Extractmet Private Limited (IIT Madras Research Park, Chennai, India).
+All rights reserved.
+
+PROPRIETARY EVALUATION LICENCE - RH-OB Process Control and Digital Twin (backend).
+
+The software is provided for evaluation and engineering demonstration. Use in plant
+operation requires a separate written licence and the site validation, OT-security and
+safety approvals described in docs/SAFETY_LIMITATIONS.md and docs/VALIDATION_PLAN.md.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IT IS NOT A SAFETY-RATED
+CONTROL SYSTEM AND MUST NOT BE USED AS ONE.
+
+Third-party components are used under their own licences (see docs/SOURCES.md, section
+"Software dependencies"): FastAPI (MIT), Uvicorn (BSD-3), Pydantic (MIT), NumPy (BSD-3),
+SciPy (BSD-3), scikit-learn (BSD-3), pandas (BSD-3), SQLAlchemy (MIT), Alembic (MIT),
+PyYAML (MIT), httpx (BSD-3), psycopg (LGPL-3.0, dynamically linked).

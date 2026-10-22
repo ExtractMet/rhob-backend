@@ -1,0 +1,39 @@
+# Render Blueprint for rhob-backend (FastAPI). Deploy: Render Dashboard -> New -> Blueprint -> this repo.
+# Free instances spin down when idle and have an ephemeral filesystem: acceptable for a DEMO only,
+# never for live plant use. Use a paid instance (>= 1 CPU recommended: the stiff solver is CPU bound)
+# and the managed PostgreSQL below for persistence.
+services:
+  - type: web
+    name: rhob-backend
+    runtime: python
+    plan: starter
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.5"
+      - key: RHOB_ENV
+        value: demo
+      - key: RHOB_DEMO_AUTH
+        value: "true"
+      - key: RHOB_TOKEN_SECRET
+        generateValue: true
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: RHOB_AUTO_CREATE_TABLES
+        value: "true"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: rhob-db
+          property: connectionString
+databases:
+  - name: rhob-db
+    plan: basic-256mb
+    region: singapore
+    databaseName: rhob
+    user: rhob

@@ -1,0 +1,15 @@
+# rhob-backend runtime dependencies (exact versions verified by the release test run, Python 3.13)
+fastapi==0.150.0
+uvicorn==0.54.0
+pydantic==2.13.5
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.5
+openpyxl==3.1.5
+SQLAlchemy==2.1.5
+alembic==1.20.0
+PyYAML==6.0.3
+httpx==0.28.1
+# PostgreSQL driver (production / Render Postgres). Harmless if SQLite is used.
+psycopg[binary]>=3.2,<4
