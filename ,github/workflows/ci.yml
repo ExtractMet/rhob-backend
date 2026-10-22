@@ -1,0 +1,17 @@
+name: backend-ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - run: pip install -r requirements-dev.txt
+      - run: python scripts/check_install.py
+      - run: python -m pytest -q --durations=10
+      - run: python scripts/generate_data_dictionary.py --check
